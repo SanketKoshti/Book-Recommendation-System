@@ -15,7 +15,7 @@ def fetch_p(m_id):
     return p_path
 
 
-similarity = pickle.load(open("artifacts/model.pkl", 'rb'))
+similarity = pickle.load(open('artifacts/model.pkl', 'rb'))
 
 
 def recommend_book(book_name):
