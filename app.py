@@ -8,10 +8,10 @@ from bookRecommendation import recommend_book, fetch_p, books
 st.header("Book Recommendation System")
 
 # Load the pre-trained model and data files
-model = pickle.load(open('artifacts/model.pkl', 'rb'))
-books_name = pickle.load(open('artifacts/books_name.pkl', 'rb'))
-final_rating = pickle.load(open('artifacts/final_ratings.pkl', 'rb'))
-book_pivot = pickle.load(open('artifacts/book_pivot.pkl', 'rb'))
+model = pickle.load(open('model.pkl', 'rb'))
+books_name = pickle.load(open('books_name.pkl', 'rb'))
+final_rating = pickle.load(open('final_ratings.pkl', 'rb'))
+book_pivot = pickle.load(open('book_pivot.pkl', 'rb'))
 
 
 def fetch_poster(suggestion):
