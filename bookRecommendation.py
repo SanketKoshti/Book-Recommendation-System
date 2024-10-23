@@ -15,7 +15,7 @@ def fetch_p(m_id):
     return p_path
 
 
-similarity = pickle.load(open('artifacts/model.pkl', 'rb'))
+similarity = pickle.load(open('model.pkl', 'rb'))
 
 
 def recommend_book(book_name):
@@ -26,7 +26,7 @@ def recommend_book(book_name):
 
 st.title("Book Recommendation System")
 
-book_dict = pickle.load(open('artifacts/books_name.pkl', 'rb'))
+book_dict = pickle.load(open('books_name.pkl', 'rb'))
 books = pd.DataFrame(book_dict)
 
 option = st.selectbox(
