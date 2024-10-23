@@ -1,4 +1,4 @@
-import movies
+
 import streamlit as st
 import pandas as pd
 import pickle
@@ -45,8 +45,8 @@ k = 0;
 for i in books_rec[:5]:
     with col[k]:
         j = k + 1
-        st.text(str(j) + ": " + movies.iloc[i[0]].title)
-        img_path = fetch_p(movies.iloc[i[0]].movie_id)
+        st.text(str(j) + ": " + books.iloc[i[0]].title)
+        img_path = fetch_p(books.iloc[i[0]].movie_id)
         st.write("\n")
         st.image(img_path)
         k += 1
